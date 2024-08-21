@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="left">
+        <form action="/index.html"><button class="main">Main</button></form>
+        <form action="/index1.html"><button class="jobSearch">Job Search</button></form>
+        <button class="admin">Admin Panel</button>
+        <button class="manageApplication">Manage Applications</button>
+        <button class="addJobButton">+ Add</button>
+    </div>
+    <div class="right">
+        <h1>Latest Job</h1>
+        <hr>
+        <div class="box"></div>
+        <dialog class="addJobDialog">
+            <form action="" class="addJobForm">
+                <input type="text" placeholder="Title:" name="addTitle">
+                <select name="addCategory" id="">
+                    <option value="frontend">Front-End</option>
+                    <option value="backend">Back-End</option>
+                    <option value="fullstack">Full-Stack</option>
+                </select>
+                <select name="addLevel" id="">
+                    <option value="junior">Junior Developer</option>
+                    <option value="middle">Middle Developer</option>
+                    <option value="senior">Senior Developer</option>
+                </select>
+                <button type="submit" class="saveAddJobButton">Add Job</button>
+            </form>
+            <button class="closeAddJobDialog">X</button>
+        </dialog>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
+</body>
+</html>
