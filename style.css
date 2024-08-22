@@ -163,3 +163,7 @@ dialog{
     box-shadow: 5px 5px 10px red;
     transition: 1s;
 }
+hr{
+    height: 3px;
+    background-color: gray;
+}
